@@ -8,12 +8,3 @@
 | NVME          | [XPG SX8200 Pro](https://www.xpg.com/us/xpg/583 "XPG SX8200 Pro") |
 | VGA           | [Sapphire RX 5600 XT](https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-5600-xt-6g-gddr6 "Sapphire RX 5600 XT") |
 | Wireless Card | [Fenvi T919](https://www.fenvi.com/product_detail_16.html "Fenvi T919") |
-| Motherboard   |   |
-| Motherboard   |   |
-| Motherboard   |   |
-| Motherboard   |   |
-| Motherboard   |   |
-| Motherboard   |   |
-| Motherboard   |   |
-| Motherboard   |   |
-| Motherboard   |   |
