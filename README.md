@@ -1,5 +1,5 @@
 # Asrock B560M Pro4 Hackintosh
-(img/sc.png)
+![Alt text](img/sc.png)
 
 
 | Spek | Type                    |
