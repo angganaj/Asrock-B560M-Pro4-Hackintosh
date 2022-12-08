@@ -1,7 +1,7 @@
 # Asrock B560M Pro4 Hackintosh
 ![Alt text](img/sc.png)
 
-<p align="center">
+
 | Spek | Type                    |
 | ------------- | ------------------------------ |
 | CPU           | [Intel i5-10400F](https://www.intel.com/content/www/us/en/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html "xxx") |
@@ -11,7 +11,3 @@
 | VGA           | [Sapphire RX 5600 XT](https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-5600-xt-6g-gddr6 "Sapphire RX 5600 XT") |
 | Wireless Card | [Fenvi T919](https://www.fenvi.com/product_detail_16.html "Fenvi T919") |
 
-
-
-// Your content
-</p>
