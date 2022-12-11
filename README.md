@@ -1,6 +1,7 @@
 # Asrock B560M Pro4 Hackintosh
 
 
+
 | Spek | Type                    |
 | ------------- | ------------------------------ |
 | CPU           | [Intel i5-10400F](https://www.intel.com/content/www/us/en/products/sku/199278/intel-core-i510400f-processor-12m-cache-up-to-4-30-ghz/specifications.html "xxx") |
