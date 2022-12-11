@@ -1,7 +1,7 @@
 # Asrock B560M Pro4 Hackintosh
 
-<p align="center"><img src="img/sc1.png">
-![Alt text](img/cs1.png)
+<p align="center"><img src=img/cs1.png>
+![Alt text]()
 </p>
 
 | Spek | Type                    |
