@@ -32,7 +32,7 @@
 -->
 
 Kext|Description|for
-:----|:----|:----
+|--|--|--|
 [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)|Used for AppleHDA patching, allowing support for the majority of on-board sound controllers.|Audio
 [IntelMausi.kext](https://github.com/acidanthera/IntelMausi/releases)|Intel's 82578, 82579, I217, I218 and I219 NICs are officially supported.| Ethernet
 [Lilu.kext](https://github.com/acidanthera/Lilu/releases)|Patch many processes, required for AppleALC, WhateverGreen, VirtualSMC and many other kexts.
@@ -46,7 +46,7 @@ Kext|Description|for
 
 # GPU Specific `boot-args`
 Parameter|Description
-:----|:----
+|--|--|
 agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), without this you'll get a black screen.<br>**Don't use if you don't have Navi** (ie. Polaris and Vega cards shouldn't use this).
 
 # Special notes
@@ -70,8 +70,8 @@ agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), 
 * Internal Speaker, Mic, Headphone Audio
 * Ethernet
 * WiFi
-* HDMI Output
-* HDMI Audio
+* HDMI DP Output
+* HDMI DP Audio
 * All USB Ports
 * Etc
 
@@ -80,6 +80,7 @@ agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), 
 
 
 # References & thanks
-https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html<br>
-https://dortania.github.io/Getting-Started-With-ACPI/<br>
-https://t.me/HackintoshLover<br>
+- [Apple inc](https://www.apple.com/)<br>
+- [dortania.github.io](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#starting-point)<br>
+- [olarila.com](https://www.olarila.com/)<br>
+- [HackintoshLover](https://t.me/HackintoshLover)<br>
