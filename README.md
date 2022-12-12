@@ -1,7 +1,7 @@
 # Asrock B560M Pro4 Hackintosh
 
 <p align="center"><img src=img/cs1.png></p>
-<p align="center"><img src=img/bm.png></p>
+<p align="center"><img src=img/bm.jpg></p>
 
 | Spek | Type                    |
 | -------------     | ------------------------------ |
