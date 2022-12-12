@@ -63,11 +63,14 @@ agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), 
 Parameter|Description
 :----|:----
 agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), without this you'll get a black screen.<br>**Don't use if you don't have Navi** (ie. Polaris and Vega cards shouldn't use this).
-# Working ✅:
+
+# ✅
 * QE/CI
 * CPU Power Management
 * Restart, Sleep and Shutdown
 * Internal Speaker, Mic, Headphone Audio
+* iMessage and FaceTime
+* Handoff and Continuity
 * Ethernet
 * WiFi
 * HDMI DP Output
@@ -75,7 +78,7 @@ agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), 
 * All USB Ports
 * Etc
 
-# Not Working ❌:
+# ❌
 - not yet found
 
 
