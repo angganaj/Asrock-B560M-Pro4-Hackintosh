@@ -30,7 +30,6 @@
 
 <br><br>
 
-# Kexts used:
 <!--
 - [AppleALC.kext](https://github.com/acidanthera/AppleALC)
 - [IntelMausi.kext](https://github.com/acidanthera/IntelMausi)
@@ -44,6 +43,7 @@
 - [XHCI-unsupported.kext](https://github.com/johnlimabravo/XHCI-unsupported)
 -->
 
+# Kexts used:
 Kext|Description|for
 |--|--|--|
 [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases)|Used for AppleHDA patching, allowing support for the majority of on-board sound controllers.|Audio
