@@ -1,5 +1,5 @@
 # Asrock B560M Pro4 Hackintosh
-
+<!--
 - [Spek](#spek)
 - [Kexts](#kexts-used)
 - [boot-args](#gpu-specific-boot-args)
@@ -9,13 +9,13 @@
     - [For Intel 11th gen CPU users](#for-intel-11th-gen-cpu-users)
 - [Map your USB](#map-your-usb)
 - [References & thanks](#references--thanks)
+-->
 
 <p align="center"><img src=https://www.asrock.com/mb/photo/B560M%20Pro4(M2).png></p>
 <p align="center"><img src=img/cs1.png></p>
 <p align="center"><img src=img/bm.jpg></p>
 
 <br><br>
-
 # Spek :
 | Spek | Type  |
 | -------------     | ------------------------------ |
