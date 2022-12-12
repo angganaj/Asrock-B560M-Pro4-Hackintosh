@@ -151,6 +151,15 @@ Use:
 
 <br><br>
 
+# helpful app
+- [Hackintool](https://github.com/benbaker76/Hackintool)
+- [About This Hack](https://github.com/0xCUB3/About-This-Hack)
+- [balenaEtcher](https://github.com/balena-io/etcher)
+- [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools)
+- [Stats](https://github.com/exelban/stats)
+
+<br><br>
+
 # References & thanks
 - [Apple inc](https://www.apple.com/)<br>
 - [dortania.github.io](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#starting-point)<br>
