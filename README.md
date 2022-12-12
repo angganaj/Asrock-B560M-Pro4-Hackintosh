@@ -1,5 +1,15 @@
 # Asrock B560M Pro4 Hackintosh
-#
+
+- [Spek](#spek)
+- [Kexts](#kexts-used)
+- [boot-args](#gpu-specific-boot-args)
+- [Special notes](#special-notes)
+- [Work & Not](#work--not)
+- [BIOS settings](#bios-settings)
+    - [For Intel 11th gen CPU users](#for-intel-11th-gen-cpu-users)
+- [Map your USB](#map-your-usb)
+- [References & thanks](#references--thanks)
+
 <p align="center"><img src=https://www.asrock.com/mb/photo/B560M%20Pro4(M2).png></p>
 <p align="center"><img src=img/cs1.png></p>
 <p align="center"><img src=img/bm.jpg></p>
@@ -67,6 +77,8 @@ alcid="XX'' | layout 11, 12, 23, 66, 69, 77
 
 <br><br>
 
+# Work & Not
+
 # ✅
 * QE/CI
 * CPU Power Management
@@ -86,7 +98,7 @@ alcid="XX'' | layout 11, 12, 23, 66, 69, 77
 
 <br>
 
-# Adjusting the main BIOS settings
+# BIOS settings
 **Enable**
 
 * Intel Virtualization Technology (VT-x)
@@ -105,7 +117,7 @@ alcid="XX'' | layout 11, 12, 23, 66, 69, 77
 
 <br>
 
-# For 11th gen CPU users
+# For Intel 11th gen CPU users
 Your iGPU will not be supported in macOS due to Apple's transistion to Apple Silicon, so you can skip the iGPU configuration step. Using an F-series CPU would be beneficial here.
 
 Also, 11th Gen CPUs are required to change the CPUID by adding these entries under `Root > Kernel > Emulate` as Apple also doesn't support them out of the box:
@@ -135,7 +147,9 @@ Map your ASM107x USB controller (entries 2.0 and 3.0) as type `255` (Internal) a
 Use:
 * `iMac20,1` if you have an 8-core or lower CPU with an iGPU (ie. i7-10700)
 * `iMac20,2` if you have a 10-core CPU (ie. i9-10900)
-* `iMacPro1,1` (or `MacPro7,1` with the [**RestrictEvents**](https://github.com/acidanthera/RestrictEvents) kext) if you don't have an iGPU (ie. AMD dGPU with a F-series CPU such as the i3-10105F like me). 
+* `iMacPro1,1` (or `MacPro7,1` with the [**RestrictEvents**](https://github.com/acidanthera/RestrictEvents) kext) if you don't have an iGPU (ie. AMD dGPU with a F-series CPU such as the i5-10400F like me). 
+
+<br><br>
 
 # References & thanks
 - [Apple inc](https://www.apple.com/)<br>
