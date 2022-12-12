@@ -1,7 +1,7 @@
 # Asrock B560M Pro4 Hackintosh
 #
+<p align="center"><img src=https://www.asrock.com/mb/photo/B560M%20Pro4(M2).png></p>
 <p align="center"><img src=img/cs1.png></p>
-<p align="center"><img src=img/about.png></p>
 <p align="center"><img src=img/bm.jpg></p>
 
 # Spek :
@@ -12,7 +12,7 @@
 | Motherboard       | [ASRock B560M Pro4 ](https://www.asrock.com/mb/Intel/B560M%20Pro4/index.asp) |
 | RAM               | [GSkill 32 GB](https://www.gskill.com/product/165/184/1536125673/F4-3000C14Q-32GVR-EOL) |
 | VGA               | [Sapphire RX 5600 XT](https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-5600-xt-6g-gddr6) |
-| PCIe on off remot | [Ewelink Wifi Smart Switch](https://aliexpress.com/i/33042974681.html) |
+| remot on-off      | [Ewelink Wifi Smart Switch](https://aliexpress.com/i/33042974681.html) |
 | NVME              | [XPG SX8200 Pro](https://www.xpg.com/us/xpg/583) |
 | WiFi & Bluetooth  | [Fenvi T919](https://www.fenvi.com/product_detail_16.html) |
 
