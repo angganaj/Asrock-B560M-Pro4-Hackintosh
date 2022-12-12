@@ -4,6 +4,8 @@
 <p align="center"><img src=img/cs1.png></p>
 <p align="center"><img src=img/bm.jpg></p>
 
+<br><br>
+
 # Spek :
 | Spek | Type  |
 | -------------     | ------------------------------ |
@@ -16,6 +18,7 @@
 | NVME              | [XPG SX8200 Pro](https://www.xpg.com/us/xpg/583) |
 | WiFi & Bluetooth  | [Fenvi T919](https://www.fenvi.com/product_detail_16.html) |
 
+<br><br>
 
 # Kexts used:
 <!--
@@ -44,13 +47,17 @@ Kext|Description|for
 [SATA-Unsupported](https://github.com/khronokernel/Legacy-Kexts/blob/master/Injectors/Zip/SATA-unsupported.kext.zip)|Adds support for a large variety of SATA controllers, mainly relevant for laptops which have issues seeing the SATA drive in macOS.<br>We recommend testing without this first.
 [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)|Better experience with unsupported processors like AMD, Disable MacPro7,1 memory warnings and provide upgrade to macOS Monterey via Software Updates when available.
 
+<br><br>
+
 # GPU Specific `boot-args`
 Parameter|Description
 |--|--|
 agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), without this you'll get a black screen.<br>**Don't use if you don't have Navi** (ie. Polaris and Vega cards shouldn't use this).
+alcid="XX'' | layout 11, 12, 23, 66, 69, 77
+
+<br><br>
 
 # Special notes
-
 - USB port mapping is **REQUIRED**. [Guide](https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html)
 - **`XhciPortLimit`** - Needed **`DISABLE`** if you use Big Sur 11.3+. 
 	- Please Mapping USB in macOS Catalina before install Big Sur or Newer for best results.[USBPorts.kext](https://github.com/USBToolBox/kext)	
@@ -58,11 +65,7 @@ agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), 
 - Does NOT SUPPORT iGPU in 11th Gen.
 - You NEED dGPU (dedicated/discrete GPU (eg. RX 560, 570, 580, 590, RX 5700 XT, etc).
 
-
-### GPU-Specific `boot-args`
-Parameter|Description
-:----|:----
-agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), without this you'll get a black screen.<br>**Don't use if you don't have Navi** (ie. Polaris and Vega cards shouldn't use this).
+<br><br>
 
 # ✅
 * QE/CI
@@ -78,9 +81,63 @@ agdpmod=pikera|Used for disabling board ID checks on Navi GPUs(RX 5000 series), 
 * All USB Ports
 * Etc
 
+<br><br>
+
 # ❌
 - not yet found
 
+<br><br>
+
+# Adjusting the main BIOS settings
+**Enable**
+
+* Intel Virtualization Technology (VT-x)
+* Multi-processor
+* UEFI Boot
+* Intel VT-d (or set `DisableIoMapper` in the `config.plist` to `FALSE`
+* SATA Mode to AHCI
+* XHCI Handoff
+* Above 4G Decoding and Clever Access Memory (or set `ResizeAppleGpuBars` to `-1`)
+
+**Disable**
+
+* Legacy ROM support
+* Secure Boot
+* Intel SGX
+
+<br><br>
+
+# For 11th gen CPU users
+Your iGPU will not be supported in macOS due to Apple's transistion to Apple Silicon, so you can skip the iGPU configuration step. Using an F-series CPU would be beneficial here.
+
+Also, 11th Gen CPUs are required to change the CPUID by adding these entries under `Root > Kernel > Emulate` as Apple also doesn't support them out of the box:
+
+| Key | Type | Value |
+| --- | --- | --- |
+| Cpuid1Data | Data | \<EA060900000000000000000000000000\> |
+| Cpuid1Mask | Data | \<FFFFFFFF000000000000000000000000\> |
+| DummyPowerManagement | Boolean | 0 |
+| MaxKernel | String | |
+| MinKernel | String | |
+
+<br><br>
+
+## Config your iGPU
+Not required if you don't have one. [**Follow these instructions**](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties).
+
+<br><br>
+
+## Map your USB
+Using [**USBToolBox**](https://github.com/USBToolBox/tool) is recommended.
+Map your ASM107x USB controller (entries 2.0 and 3.0) as type `255` (Internal) as those two stay on all the time.
+
+**Note:** You must exclude your RGB controller during the mapping process, as it will cause sleep problems and the RGB LEDs will freeze until you fully halt the machine.
+
+## Add your own `PlatformInfo` entries using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+Use:
+* `iMac20,1` if you have an 8-core or lower CPU with an iGPU (ie. i7-10700)
+* `iMac20,2` if you have a 10-core CPU (ie. i9-10900)
+* `iMacPro1,1` (or `MacPro7,1` with the [**RestrictEvents**](https://github.com/acidanthera/RestrictEvents) kext) if you don't have an iGPU (ie. AMD dGPU with a F-series CPU such as the i3-10105F like me). 
 
 # References & thanks
 - [Apple inc](https://www.apple.com/)<br>
