@@ -81,12 +81,10 @@ alcid="XX'' | layout 11, 12, 23, 66, 69, 77
 * All USB Ports
 * Etc
 
-<br><br>
-
 # ❌
 - not yet found
 
-<br><br>
+<br>
 
 # Adjusting the main BIOS settings
 **Enable**
@@ -105,7 +103,7 @@ alcid="XX'' | layout 11, 12, 23, 66, 69, 77
 * Secure Boot
 * Intel SGX
 
-<br><br>
+<br>
 
 # For 11th gen CPU users
 Your iGPU will not be supported in macOS due to Apple's transistion to Apple Silicon, so you can skip the iGPU configuration step. Using an F-series CPU would be beneficial here.
@@ -120,12 +118,12 @@ Also, 11th Gen CPUs are required to change the CPUID by adding these entries und
 | MaxKernel | String | |
 | MinKernel | String | |
 
-<br><br>
+<br>
 
 ## Config your iGPU
 Not required if you don't have one. [**Follow these instructions**](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#deviceproperties).
 
-<br><br>
+<br>
 
 ## Map your USB
 Using [**USBToolBox**](https://github.com/USBToolBox/tool) is recommended.
