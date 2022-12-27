@@ -25,7 +25,7 @@
 | RAM               | [GSkill 32 GB](https://www.gskill.com/product/165/184/1536125673/F4-3000C14Q-32GVR-EOL) |
 | VGA               | [Sapphire RX 5600 XT](https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-5600-xt-6g-gddr6) |
 | remot on-off      | [Ewelink Wifi Smart Switch](https://aliexpress.com/i/33042974681.html) |
-| NVME              | [XPG SX8200 Pro](https://www.xpg.com/us/xpg/583) |
+| NVME              | [WD SN350](https://www.westerndigital.com/products/internal-drives/wd-green-sn350-nvme-ssd#WDS240G2G0C) |
 | WiFi & Bluetooth  | [Fenvi T919](https://www.fenvi.com/product_detail_16.html) |
 
 <br><br>
