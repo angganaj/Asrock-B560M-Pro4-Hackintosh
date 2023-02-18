@@ -13,7 +13,7 @@
 
 <p align="center"><img src=https://www.asrock.com/mb/photo/B560M%20Pro4(M2).png></p>
 <p align="center"><img src=img/cs1.png></p>
-<p align="center"><img src=img/bm.jpg></p>
+<p align="center"><img src=img/bm1.jpg></p>
 
 <br><br>
 # Spek :
